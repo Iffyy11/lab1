@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Photo Gallery</title>
+  <meta name="description" content="Photography gallery: images, audio, video, and captions." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://example.com/media.html" />
+</head>
+<body>
+  <a href="#main">Skip to content</a>
+  <header>
+  <h1>Photo Gallery</h1>
+    <nav aria-label="Primary">
+      <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About </a></li>
+  <li><a href="media.html" aria-current="page">Media</a></li>
+  <li><a href="extras.html">Extras</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article>
+      <section>
+        <h2>Featured Photo</h2>
+        <figure>
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1000&q=80" media="(min-width: 1000px)">
+            <source srcset="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" media="(min-width: 600px)">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=320&q=80" alt="Landscape Photography">
+          </picture>
+          <figcaption>Landscape photo by Unsplash photographer.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Audio Inspiration</h2>
+        <audio controls>
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Listen to relaxing music while editing photos.</figcaption>
+      </section>
+
+      <section>
+        <h2>Photography Tips Video</h2>
+        <video controls width="640" poster="assets/images/hero-medium.jpg">
+          <source src="assets/video/sample.mp4" type="video/mp4">
+          <source src="assets/video/sample.webm" type="video/webm">
+          <track src="assets/captions/sample.vtt" kind="captions" srclang="en" label="English" default>
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+        <figcaption>Video with captions using a WebVTT track.</figcaption>
+          </iframe>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; <time datetime="2025">2025</time> Hobby Site</p>
+  </footer>
+</body>
+</html>
